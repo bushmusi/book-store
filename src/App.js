@@ -1,12 +1,26 @@
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Header from './component/Header';
+import BookList from './component/BookList';
+import Catagory from './component/Catagory';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welocome to Book Store</h1>
-      </header>
-    </div>
+
+    <Router>
+      <Header />
+      <div className="App">
+        <Routes>
+          <Route path="/book" element={<BookList />} />
+          <Route path="/catagory" element={<Catagory />} />
+          <Route path="/" exact="true" element={<BookList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

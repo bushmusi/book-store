@@ -1,53 +1,59 @@
-# Book Store
-The Bookstore project is to display a list of books, add a book, and remove a selected book. I have used React.Js as frontend library. There are also different tools I have used like linters, GitHub flow, GitFlow and Jest for testing porpuse.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project is build using React framework and I have used `stylelint` and `eslinte` for checking linter errors.
-> Below features are added here
-- Basic mathematical operation
-- **CSS3** `grid` features have used for input displays
+# Project Name
 
-## Live Demo 
-- > [GitHub Cloud Link](https://bushmusi.github.io/math-magicians/)
-- > [Heroku Cloud Link](https://math-hub.herokuapp.com/)
-- > [Netlify Cloud Link](https://math-hub.netlify.app/)
+> One paragraph statement about the project.
+
 ![screenshot](./app_screenshot.png)
+
+Additional description about the project and its features.
+
 ## Built With
 
-- React.Js
-- CSS3
-- Linters
+- Major languages
+- Frameworks
+- Technologies used
+
+## Live Demo
+
+[Live Demo Link](https://livedemo.com)
+
+
 ## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+
 To get a local copy up and running follow these simple example steps.
 
-1. `git clone https://github.com/bushmusi/book-store`
-2. `cd book-store`
-3. `npm start`
+### Prerequisites
 
-## Run tests
+### Setup
 
-For tracking linters errors locally, you need to follow these steps:
+### Install
 
-- For tracking linter errors in CSS file run:
+### Usage
 
-1. `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
-2. `npx stylelint "**/*.{css,scss}"`
+### Run tests
 
-- For tracking linter errors in Javascript file run:
+### Deployment
 
-1. `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
-2. `npx eslint .`
 
-## Deployment
 
-- Use GitHub pages to deploy website
-- For more information about publishing sources, see [About github pages](https://pages.github.com/)
+## Authors
 
-## Author
+👤 **Author1**
 
-👤 **Bushra**
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-- GitHub: 
-    - [Bushra](https://www.github.com/bushmusi)
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -61,9 +67,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse 
-- Coding Partners
-- Code Reviewers
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 

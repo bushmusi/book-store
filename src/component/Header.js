@@ -22,12 +22,12 @@ const Header = () => (
     <nav>
       <ul>
         {
-                    links.map((item) => (
-                      <li key={item.id}>
-                        <NavLink to={item.path} exact="true">{item.name}</NavLink>
-                      </li>
-                    ))
-                }
+          links.map((item) => (
+            <li key={item.id}>
+              <NavLink to={item.path} exact="true">{item.name}</NavLink>
+            </li>
+          ))
+        }
       </ul>
     </nav>
   </header>

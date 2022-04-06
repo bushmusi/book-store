@@ -1,19 +1,24 @@
-const ADD = 'ADD_BOOK';
-const REMOVE = 'REMOVE_BOOK';
+import { v4 as uuid } from 'uuid';
 
-const initialBookList = [];
+const ADD = 'bookstore/books/ADD_BOOK';
+const REMOVE = 'bookstore/books/REMOVE_BOOK';
 
-const addBook = (obj) => ({
-  type: ADD,
-  payload: obj,
-});
+const initBooks = [
+  {
+    id: uuid(),
+    catagory: 'Romans',
+    title: 'The Love tricks',
+    author: 'Thomas J',
+  },
+  {
+    id: uuid(),
+    catagory: 'Physchology',
+    title: 'Road to happiness',
+    author: 'Erikson P',
+  },
+];
 
-const removeBook = (id) => ({
-  type: REMOVE,
-  payload: id,
-});
-
-const bookReducre = (state = initialBookList, action = { type: null }) => {
+export default function reducer(state = initBooks, action = { type: null }) {
   switch (action.type) {
     case ADD:
       return [
@@ -22,13 +27,25 @@ const bookReducre = (state = initialBookList, action = { type: null }) => {
       ];
     case REMOVE:
     {
-      const payload = action;
-      return state.filter((item) => item.id !== payload.id);
+      const { id } = action;
+      return state.filter((item) => item.id !== id);
     }
     default:
       return state;
   }
-};
+}
 
-module.export = [removeBook, addBook];
-export default bookReducre;
+export function addBook(obj) {
+  return {
+    type: ADD,
+    payload: obj,
+  };
+}
+
+export function removeBook(id) {
+  console.log(`From action creator${id}`);
+  return {
+    type: REMOVE,
+    id,
+  };
+}

@@ -4,21 +4,22 @@ import Book from './Book';
 import BookForm from './BookForm';
 
 const BookList = () => {
-  const bookList = useSelector((state) => state.books);
+  const bookList = useSelector((state) => state.bookReducre.books);
   return (
     <>
       <ul className="bookList">
         {
-            bookList.map((item) => (
-              <li key={item.id}>
-                <Book
-                  title={item.title}
-                  author={item.author}
-                  id={item.id}
-                />
-              </li>
-            ))
-          }
+          Object.entries(bookList).map((val) => (
+            <li key={val[0]}>
+              <Book
+                title={val[1][0].title}
+                author={val[1][0].author}
+                category={val[1][0].category}
+                id={val[0]}
+              />
+            </li>
+          ))
+        }
       </ul>
       <BookForm />
     </>

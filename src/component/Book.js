@@ -8,7 +8,6 @@ const Book = (props) => {
   const dispatch = useDispatch();
 
   const removeItem = (id) => {
-    console.log(id);
     dispatch(removeBook(id));
   };
   return (

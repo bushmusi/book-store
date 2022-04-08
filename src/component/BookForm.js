@@ -9,13 +9,12 @@ export default function BookForm() {
   function addBookItem(e) {
     const form = document.querySelector('form');
     e.preventDefault();
-    console.log(e);
     const title = e.target[0].value;
     const author = e.target[1].value;
-    const catagory = e.target[2].value;
+    const category = e.target[2].value;
     const id = uuid();
     dispatch(addBook({
-      title, author, catagory, id,
+      title, author, category, item_id: id,
     }));
     form.reset();
   }
@@ -27,7 +26,7 @@ export default function BookForm() {
         <div className="inputCont">
           <input type="text" name="title" placeholder="Please write book title..." required />
           <input type="text" name="author" placeholder="Please write book author..." required />
-          <input type="text" name="catagory" placeholder="Please write catagory..." required />
+          <input type="text" name="category" placeholder="Please write category..." required />
           <input type="submit" value="Submit" />
         </div>
       </div>

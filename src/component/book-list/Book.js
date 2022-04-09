@@ -6,12 +6,12 @@ import 'react-circular-progressbar/dist/styles.css';
 import { removeBook } from '../../redux/books/books';
 
 const Book = (props) => {
-  const paragraphStyle = { 
-    textTransform: 'capitalize', 
-    fontWeight: 'bold', 
-    color: 'rgb(18 18 18 / 49%)' 
-  }
-  
+  const paragraphStyle = {
+    textTransform: 'capitalize',
+    fontWeight: 'bold',
+    color: 'rgb(18 18 18 / 49%)',
+  };
+
   const dispatch = useDispatch();
 
   const {
@@ -39,7 +39,7 @@ const Book = (props) => {
       <div className="rightInfo">
         <div className="percentIndicator">
           <div style={{ width: 75, height: 75 }}>
-            <CircularProgressbar value={percentage ? percentage : 0} text={`${percentage ? percentage : 0}%`} />
+            <CircularProgressbar value={percentage || 0} text={`${percentage || 0}%`} />
           </div>
           <div className="perecenDetail">
             <span style={{ color: 'black' }}>{`${percentage}%`}</span>

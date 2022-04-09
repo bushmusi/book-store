@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './book-style.scss';
 import Book from './Book';
 import BookForm from './BookForm';
 
@@ -20,8 +21,8 @@ const BookList = () => {
             </li>
           ))
         }
+        <BookForm />
       </ul>
-      <BookForm />
     </>
   );
 };

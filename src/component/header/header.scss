@@ -1,0 +1,50 @@
+
+.App-header {
+  display: flex;
+  column-gap: 50px;
+  max-height: 90px;
+  padding: 30px 60px;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid lightgrey;
+
+  h1 {
+    width: 40%;
+
+    .logoName {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.875rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #0290ff;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    ul {
+      flex: 1;
+      display: flex;
+      column-gap: 30px;
+
+      li {
+        .active {
+          color: black;
+        }
+      }
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      float: left;
+    }
+  }
+}

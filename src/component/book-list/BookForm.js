@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBook } from '../../redux/books/books';
 
 export default function BookForm() {
   const dispatch = useDispatch();
@@ -22,12 +22,12 @@ export default function BookForm() {
   return (
     <form onSubmit={addBookItem}>
       <div className="mainBox">
-        <h2>ADD NEW BOOK</h2>
+        <h2 className="formTitle">ADD NEW BOOK</h2>
         <div className="inputCont">
-          <input type="text" name="title" placeholder="Please write book title..." required />
-          <input type="text" name="author" placeholder="Please write book author..." required />
-          <input type="text" name="category" placeholder="Please write category..." required />
-          <input type="submit" value="Submit" />
+          <input type="text" name="title" placeholder="Book Title" className="formInput" required />
+          <input type="text" name="author" placeholder="Author" className="formInput" required />
+          <input type="text" name="category" placeholder="Category" className="formInput" required />
+          <input type="submit" value="ADD BOOK" className="formSubmitBtn" />
         </div>
       </div>
     </form>

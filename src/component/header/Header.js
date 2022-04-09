@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './header.scss';
+import userImage from '../../images/user.png';
 
 const links = [
   {
@@ -17,7 +19,7 @@ const links = [
 const Header = () => (
   <header className="App-header">
     <h1>
-      <NavLink to="/">BOOK STORE CMS</NavLink>
+      <NavLink to="/" className="logoName">BOOK STORE CMS</NavLink>
     </h1>
     <nav>
       <ul>
@@ -29,6 +31,7 @@ const Header = () => (
           ))
         }
       </ul>
+      <img src={userImage} alt="user avator" className="userImage" />
     </nav>
   </header>
 );

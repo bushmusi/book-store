@@ -6,7 +6,7 @@ This project is build using React framework and I have used `stylelint` and `esl
 - Basic mathematical operation
 - **CSS3** `grid` features have used for input displays
 
-[Screenshot](./app_screenshot.png)'
+![screenshot](./app_screenshot.png)
 ## Live Demo 
 - > [Heroku Cloud Link](https://bushmusi-bookstore.herokuapp.com/)
 ## Built With

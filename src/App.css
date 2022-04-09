@@ -3,61 +3,6 @@
   height: 100%;
 }
 
-.App-header {
-  display: flex;
-  column-gap: 50px;
-  padding: 20px;
-  align-items: center;
-}
-
-nav > ul {
-  display: flex;
-  column-gap: 30px;
-}
-
 .App {
-  padding: 30px;
-}
-
-.bookList {
-  border: 2px solid rgb(114, 103, 103);
-  background-color: aliceblue;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
-
-form > div {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid rgb(68, 60, 60);
-  row-gap: 30px;
-  padding: 20px;
-}
-
-.bookItem {
-  display: flex;
-  padding: 20px;
-}
-
-.bookItem > div {
-  flex: 1;
-}
-
-.inputCont {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 20px;
-}
-
-input[type='text'] {
-  width: 100%;
-  padding: 20px;
-}
-
-input[type='submit'] {
-  width: 25%;
+  padding: 30px 60px;
 }
